@@ -1,0 +1,3 @@
+{
+  "mongoURI": "mongodb+srv://nova:nova@devmeet-ay4an.mongodb.net/test?retryWrites=true&w=majority"
+}
