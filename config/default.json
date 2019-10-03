@@ -1,3 +1,3 @@
 {
-  "mongoURI": "mongodb+srv://nova:nova@devmeet-ay4an.mongodb.net/test?retryWrites=true&w=majority"
+  "mongoURI": "mongodb+srv://subash:subash@devmeet-myvc2.mongodb.net/admin?retryWrites=true&w=majority"
 }

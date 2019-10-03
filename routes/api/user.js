@@ -1,5 +1,5 @@
 const express = require("express");
-const { check, validationResult } = require("express-validator");
+const { check, validationResult } = require("express-validator/check");
 
 const router = express.Router();
 
@@ -10,13 +10,14 @@ const router = express.Router();
 router.post(
   "/",
   [
-    check("name", "Name cannot be empty")
+    check("name", "Name is required")
       .not()
       .isEmpty(),
-    check("email", "Provide a valid email").isEmail(),
-    check("password", "Is required and length should be more than 6").isLength({
-      min: 5
-    })
+    check("email", "Please include a valid email").isEmail(),
+    check(
+      "password",
+      "Please enter a password with 6 or more characters"
+    ).isLength({ min: 6 })
   ],
   (req, res) => {
     // Finds the validation errors in this request and wraps them in an object with handy functions
@@ -24,6 +25,7 @@ router.post(
     if (!errors.isEmpty()) {
       return res.status(422).json({ errors: errors.array() });
     }
+    res.send("User Route");
   }
 );
 module.exports = router;
