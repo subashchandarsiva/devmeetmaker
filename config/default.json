@@ -1,4 +1,5 @@
 {
   "mongoURI": "mongodb+srv://subash:subash@devmeet-myvc2.mongodb.net/test?retryWrites=true&w=majority",
-  "mongoURI1": "mongodb://subash:subash@devmeet-shard-00-00-myvc2.mongodb.net:27017,devmeet-shard-00-01-myvc2.mongodb.net:27017,devmeet-shard-00-02-myvc2.mongodb.net:27017/admin?ssl=true&replicaSet=devmeet-shard-0&authSource=admin&retryWrites=true&w=majority"
+  "mongoURI1": "mongodb://subash:subash@devmeet-shard-00-00-myvc2.mongodb.net:27017,devmeet-shard-00-01-myvc2.mongodb.net:27017,devmeet-shard-00-02-myvc2.mongodb.net:27017/admin?ssl=true&replicaSet=devmeet-shard-0&authSource=admin&retryWrites=true&w=majority",
+  "jwtToken": "newSecrets"
 }
